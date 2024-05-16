@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './Home';
+import './App.css'
 import PickWinner from './PickWinner';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
