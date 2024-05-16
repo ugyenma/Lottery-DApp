@@ -16,6 +16,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
+
+const SEPOLIA_PRIVATE_KEY = "f6910291be2cf0d8d7c547357de22398e3732aa6b0baf1e398d7445d20f1d6ac"
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.18",
+  networks: {
+    SEPOLIA: {
+      url: "https://eth-sepolia.g.alchemy.com/v2/WgjeH4Z8TVzdvqyTi9RaLDH32Yb7_H1x",
+      accounts: [`${SEPOLIA_PRIVATE_KEY}`],
+    },
+  },
+
 };
