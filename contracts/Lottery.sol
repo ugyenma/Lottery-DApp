@@ -55,7 +55,7 @@ contract Lottery {
         winner.transfer(address(this).balance);
         claimed = true;
     }
-
+    
     function getPlayers() public view returns (address payable[] memory) {
         return players;
     }
